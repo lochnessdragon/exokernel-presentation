@@ -64,7 +64,9 @@ The last comment block of each slide will be treated as slide notes. It will be 
 layout: default
 ---
 
-<a href="http://shinytoylabs.com/jargon/"/>
+# What did I do for my Honors project?
+
+[Glad you asked!](http://shinytoylabs.com/jargon/)
 
 <!--
 <spin the jargon wheel> pause. Well, it looks like I'm getting glares from the Honors teachers, so I guess I'm actually going to have to explain what I did. Bear with me though, as it's a little complex.

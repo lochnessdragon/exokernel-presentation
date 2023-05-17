@@ -84,8 +84,8 @@ transition: slide-right
 
 ::right::
 
-<img src="img/crossword.gif"/>
-<img src="img/googling.png"/>
+<img src="/img/crossword.gif"/>
+<img src="/img/googling.png"/>
 
 ---
 layout: section

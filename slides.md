@@ -101,7 +101,7 @@ layout: default
 
 Meet Craig! He's a computer. However, he's basically useless without all his friends (that live inside him).
 
-![Craig](img/craig.png)
+![Craig](/img/craig.png)
 
 <!--I was told that naming him would make the audience attached, and cause them to feel emotionally damaged when I killed him later. I'm going for a where the red fern grows type vibe, ya feel?-->
 

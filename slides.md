@@ -61,10 +61,10 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: fade-out
-layout: iframe
-url: http://shinytoylabs.com/jargon/
+layout: default
 ---
+
+<a href="http://shinytoylabs.com/jargon/"/>
 
 <!--
 <spin the jargon wheel> pause. Well, it looks like I'm getting glares from the Honors teachers, so I guess I'm actually going to have to explain what I did. Bear with me though, as it's a little complex.
@@ -72,7 +72,6 @@ url: http://shinytoylabs.com/jargon/
 
 ---
 layout: two-cols
-transition: slide-right
 ---
 
 # Are you talking about computers? I know what they are.

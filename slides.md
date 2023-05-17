@@ -75,10 +75,10 @@ layout: two-cols
 transition: slide-right
 ---
 
-# U talking 'bout a compUter? I know what dat izzz
+# Are you talking about computers? I know what they are.
 
-- I put letters into boxes.
-- And when I don't know what letters to put in da box, I google it!
+- Letters go into boxes.
+- And when it's a toss up, just Google™ it!
 - Actually, there's a little bit more to it than that.
 - Have you ever wondered what happens between turning the computer on and crossing off some words?
 
@@ -97,7 +97,7 @@ layout: section
 layout: default
 ---
 
-# Der Computer:
+# The Computer:
 
 Meet Craig! He's a computer. However, he's basically useless without all his friends (that live inside him).
 
@@ -174,6 +174,8 @@ It includes:
 - the command prompt/terminal
 - etc.
 
+Some good examples are Windows, Mac or GNU/Linux.
+
 ---
 layout: statement
 ---
@@ -183,27 +185,137 @@ layout: statement
 ---
 layout: default
 ---
+
 # So then, what, exactly, did I do as an Honors project?
 
 I made an operating system!
+
+No, I'm not reinventing the wheel. I think modern operating systems haven't significantly changed in the last few decades. There are a lot of new ideas in OS development that can increase the speed of the system or increase the customization offered. 
+
+Research out of MIT has shown the exokernel as a potential option for future innovation (Engler et al., 1995). So that was the direction of study for my Honors project.
+
+---
+layout: two-cols
+---
+
+# What is this? X O Kernel?
+
+I know, I know, you probably have a lot of questions right now.
+
+- An exo-kernel is a slimmed down version of a kernel.
+- This allows the applications to have more control over the computer if they wish.
+- It also allows competing environments to exist on the same computer. (i.e. theoretically Windows and Mac apps could run TOGETHER)
+- The exokernel provides the *bare-minimum* security in order to split the hardware resources between applications. (*multiplexing*)
+
+::right::
+
+- Much of the previously provided functionality is moved to a library operating system. It's called a library because it can be reused by many applications and it's called an operating system because it implements things like a filesystem, device drivers and the networking stack.
+
+---
+layout: default
+---
+
+# Why did I choose this project?
+
+- I have had previous experience with low level stuff.
+- I love analyzing the interactions between hardware and software.
+- It is kinda the wildwest of computer science. The only people you can rely on are those that have walked the path before.
+- It is also extremely applicable to my hopeful future as a mechanical engineer. 
+
+<!--You haven't lived unless your researching the difference between a PIC and PIT at 2 am in the morning.-->
+
+---
+layout: default
+---
+
+# Design
+Baby steps, baby steps.
+
+- Designing an exokernel is a difficult job.
+- It's not like a regular kernel where you know you have to provide a few facilities to the applications (filesystems, mouse/keyboard interaction, drawing to teh screen)
+- Instead, you have to find a good balance between security and accessibility.
+- I also knew that I was probably going to change the design for the kernel multiple times over the course of the project.
+- How do I allow the applications to choose how they want to use the hardrive, but also prevent them from encroaching on each other's storage space?
+
+---
+layout: default
+---
+
+# Boot stage
+Beep boop, let's load it up!
+
+I decided not to implement a custom bootloader this time. It simply wasn't worth it as compared with high-quality options such as GRUB2. But I did make a nice boot theme: [PICTURE REDACTED]
+
+However, GRUB doesn't do all the work for me. I still have to switch the computer from the ancient, archaic and creepy x32 bit mode to the modern, subliminal and (dare I say it) sexy x64 bit mode.
+
+I also have to choose what software to start up on boot because a kernel without any applications is like a ship without a wheel.
+
+Some difficulties arose from this stage. Particularly transitioning the kernel from x32 to x64 bit mode because it requires a lot of extra work with memory for the developer.
+
+---
+layout: default
+---
+
+# The Exokernel's responsibilities
+
+After getting the computer to boot, it was time to implement sections of the exokernel. This focus was on securely multiplexing the different resource the computer had to offer. 
+
+I knew a lot of this might change later. Afterall, I wanted to keep the kernel as slim as possible whilst also protecting against malware.
+
+This led to a lot of back and forth, especially with how the computer deals with memory. I need to implement paging structures in order to setup x64 mode, but I don't want to disallow the library operating systems from controlling some parts of how virtual memory works.
+
+---
+layout: default
+---
+
+# A Unix Library Operating System
+An age-old tradition
+
+- Unix is an old standard for operating systems.
+- A lot of software is built to run in a Unix environment.
+- Therefore, getting a Unix environment working would allow me to avoid a lot of duplicate effort for many common computer programs.
+- This was also the first real test of the exokernel. 
+- During this stage, there was a lot of going back and forth in order to control what is implemented in the exokernel and what is implemented in the library os.
+
+---
+layout: default
+---
+
+# Some User-space programs
+Finally, something the user can see.
+
+- These are your web browsers, email clients, and command lines.
+- They allow you to interact with your computer. 
+- Again, since I had built a Unix environment, many unix programs were able to run on the computer.
+- This includes things like sed and grep.
+- I had to implement video drivers for this stage.
+
+---
+layout: default
+---
+
+# Strengths/Weaknesses
+
+- A large strength in my project was the background I had in working with operating systems.
+- However, throughout the project, I learned how little I truly knew.
+- I think a large weakness I had going into the project was focusing on long term goals. I'd never really attempted a computing project of this size, and therefore it was a little difficult to not get distracted by other computing ideas I found interesting.
+- I learned a lot about time-management and persistence through the project.
+
+---
+layout: default
+---
+
+# Where do I go from here?
+
+- Next year I'm going to ISU with a major in Mechanical Engineering.
+- I will certainly keep programming as a side-hobby and I might turn this into a functional product.
+- I think this project gave me a great experience with low-level coding that I can use in ME.
 
 ---
 layout: section
 ---
 
 # Now it's your turn! AMA!
-
----
-layout: default
----
-
-# Table of contents
-
-```
-<Toc minDepth="1" maxDepth="5"></Toc>
-```
-
-<Toc></Toc>
 
 ---
 transition: slide-up

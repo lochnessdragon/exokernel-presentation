@@ -547,7 +547,7 @@ image: https://images.unsplash.com/photo-1610118091147-37dd42d13a93?ixlib=rb-4.0
 I'd just like to thank a few people:
 
 - Mr. Gentry, my advisor
-- Ms. Reinier and Mrs. Johnson, the Honors teachers
+- Ms. Reinier, Ms. Johnson, and Dr. Milburn, the Honors teachers
 - My family and friends in the Honors program.
 
 ---

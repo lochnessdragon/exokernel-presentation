@@ -55,22 +55,6 @@ fonts:
 }
 </style>
 
-<!-- <div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div> -->
-
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
@@ -91,7 +75,7 @@ layout: default
 
 </v-clicks>
 
-<img class="rounded-tl-lg absolute max-h-72 right-0 bottom-0" src="/img/tech jargon.jpeg"/>
+<img class="rounded-tl-lg absolute max-h-72 right-0 bottom-0" src="/img/tech_jargon.jpeg"/>
 
 <img class="rounded-lg absolute bottom-8 left-8" src="/img/glossary.gif"/>
 
@@ -373,7 +357,7 @@ Baby steps, baby steps.
 
 </v-clicks>
 
-<img src="/img/exokernel vs monolithic.png"/>
+<img src="/img/exokernel_vs_monolithic.png"/>
 
 <!--Designing an exokernel is a difficult job. It's not like a regular kernel where you know you have to provide a few facilities to the applications (filesystems, mouse/keyboard interaction, drawing to the screen) Instead, you have to find a good balance between security and accessibility. I also knew that I was probably going to change the design for the kernel multiple times over the course of the project. Some questions I had to answer were: How do I allow the applications to choose how they want to use the hardrive, but also prevent them from encroaching on each other's storage space?-->
 
@@ -392,7 +376,7 @@ Beep boop, let's load it up!
 
 </v-clicks>
 
-<img class="max-h-76" src="/img/grub boot theme.png"/>
+<img class="max-h-76" src="/img/grub_boot_theme.png"/>
 
 ::right::
 

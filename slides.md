@@ -503,7 +503,7 @@ layout: default
 
 </v-clicks>
 
-<img class="absolute top-8 right-8" src="/img/strengths vs weaknesses.gif">
+<img class="absolute top-8 right-8" src="/img/strengths_vs_weaknesses.gif">
 
 <img class="absolute w-full left-0 bottom-0" src="https://images.unsplash.com/photo-1520942702018-0862200e6873?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&h=300&q=100">
 

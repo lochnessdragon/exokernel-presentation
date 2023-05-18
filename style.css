@@ -1,0 +1,11 @@
+.slidev-layout {
+    .slidev-vclick-target {
+      transition: all 1000ms ease;
+    }
+  
+    .slidev-vclick-hidden {
+      opacity: 0; 
+      pointer-events: none;
+      transform: translateY(200%);
+    }
+  }

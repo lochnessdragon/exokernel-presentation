@@ -4,7 +4,8 @@
   "scripts": {
     "build": "slidev build --base=/exokernel-presentation/",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "notes": "slidev export-notes"
   },
   "dependencies": {
     "@slidev/cli": "^0.40.16",
